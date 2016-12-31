@@ -3,14 +3,12 @@
 /* @file - main.cpp
  * author - Naveen Kumar Kaliannan
 
- * The main.cpp file computes and compare the error 
+ * The main.cpp file computes and compares the error 
  * and performance for 3 differnt floating summation
- * algorithm (Normal, Kahan and Pairwise summation).
- * The computed solution (Error.png and time.png) is 
+ * algorithms (Normal, Kahan and Pairwise summations).
+ * The computed solutions (Error.png and time.png) are 
  * availale in the output/graph directory.
 */
-
-
 
 #include<iostream>
 #include<iomanip>
@@ -73,12 +71,9 @@ T PairwiseSum(vector<T> const &v, unsigned int N, unsigned int start, unsigned i
 }
 
 
-
-
 // Main implementation
 int main()
 {
-
   // Error Comparison - Normal, Kahan and Pairwise summation
   ofstream outfile("output/data/AbsoluteErrorData.dat");
   for(unsigned int i = 1;i <= 1.E9;i *= 2)
@@ -92,7 +87,6 @@ int main()
     }
   outfile.close();
   outfile.clear(); 
-
 
   // Time Comparison - Normal, Kahan and Pairwise summation
   ofstream outfile1("output/data/TimeData.dat");
@@ -127,7 +121,6 @@ int main()
     }
   outfile1.close();
   outfile1.clear(); 
-
 
   return 0;
 }
