@@ -6,8 +6,8 @@
  * The main.cpp file computes and compares the error 
  * and performance for 3 differnt floating summation
  * algorithms (Normal, Kahan and Pairwise summations).
- * The computed solutions (Error.png and time.png) are 
- * availale in the output/graph directory.
+ * The computed solutions, error (Error.png) and performance
+ * (time.png) of the algorithms are availale in the output/graph directory.
 */
 
 #include<iostream>
