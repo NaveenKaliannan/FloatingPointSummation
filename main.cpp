@@ -70,10 +70,10 @@ T PairwiseSum(vector<T> const &v, unsigned int N, unsigned int start, unsigned i
 
 
 // Main implementation
-int main()
+int main(int argc, char* argv[])
 {
   // Error Comparison - Normal, Kahan and Pairwise summation
-  ofstream outfile("output/data/AbsoluteErrorData.dat");
+  ofstream outfile(argv[1]);
   for(unsigned int i = 1;i <= 1.E9;i *= 2)
     {
       vector<double> v(i,Pi/i);
@@ -87,7 +87,7 @@ int main()
   outfile.clear(); 
 
   // Time Comparison - Normal, Kahan and Pairwise summation
-  ofstream outfile1("output/data/TimeData.dat");
+  ofstream outfile1(argv[2]);
   for(unsigned int i = 1;i <= 1.E9;i *= 2)
     { 
       vector<double> v(i,Pi/i);

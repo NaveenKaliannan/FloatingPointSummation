@@ -1,4 +1,4 @@
 make clean
 make
-./main
+./main output/data/AbsoluteErrorData.dat output/data/TimeData.dat
 make -C output/gnuplot
